@@ -11,7 +11,6 @@ import com.bshvevgn.log.Ln;
 import com.bshvevgn.log.Log;
 import com.bshvevgn.trg.Cos;
 import com.bshvevgn.trg.Sin;
-import com.bshvevgn.trg.Tan;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -36,7 +35,6 @@ class SeriesFunctionTest {
     return Stream.of(
         Arguments.of(new Sin()),
         Arguments.of(new Cos()),
-        Arguments.of(new Tan()),
         Arguments.of(new Ln()),
         Arguments.of(new Log(3)),
         Arguments.of(new Log(5)),

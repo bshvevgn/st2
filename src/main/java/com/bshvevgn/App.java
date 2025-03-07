@@ -6,7 +6,6 @@ import com.bshvevgn.log.Log;
 import com.bshvevgn.trg.Cos;
 import com.bshvevgn.trg.Csc;
 import com.bshvevgn.trg.Sin;
-import com.bshvevgn.trg.Tan;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -36,15 +35,6 @@ public class App {
         CSVWriter.write(
                 "csv/sin.csv",
                 sin,
-                new BigDecimal(-1),
-                new BigDecimal(1),
-                new BigDecimal("0.1"),
-                new BigDecimal("0.0000000001"));
-
-        final Tan tan = new Tan();
-        CSVWriter.write(
-                "csv/tan.csv",
-                tan,
                 new BigDecimal(-1),
                 new BigDecimal(1),
                 new BigDecimal("0.1"),
